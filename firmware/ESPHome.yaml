@@ -1,0 +1,65 @@
+esphome:
+  name: vinylspeaker-1
+  comment: The Vinyl Speaker 1! https://github.com/HollowTechnology/VSPKR1
+  friendly_name: "Vinyl Speaker 1"
+
+esp32:
+  variant: esp32s3
+  framework:
+    type: esp-idf
+
+wifi:
+  # ssid: !secret wifiSSID # These will give errors if uncommented. The errors can be ignored.
+  # password: !secret wifiPassword # Also not needed as we have the captive_portal: module.
+
+  ap:
+    ssid: "VSPKR1 Fallback"
+    password: "" # No password!!
+    manual_ip:
+      static_ip: 192.168.1.1
+      gateway: 192.168.0.1
+      subnet: 255.255.255.0
+
+captive_portal:
+
+logger:
+
+psram:
+
+i2s_audio:
+  id: i2sBus
+  i2s_lrclk_pin: GPIO1
+  i2s_bclk_pin: GPIO3
+
+microphone:
+  - platform: i2s_audio
+    id: vspkrMic
+    i2s_din_pin: GPIO2
+    adc_type: external
+    pdm: false
+    sample_rate: 16000
+    bits_per_sample: 32bit
+    channel: left
+    use_apll: true
+
+speaker:
+  - platform: i2s_audio
+    id: vspkrSpeaker
+    i2s_audio_id: i2sBus
+    i2s_dout_pin: GPIO4
+    dac_type: external
+
+media_player:
+  - platform: speaker
+    mute_pin: GPIO5
+    name: None
+    id: vspkrMediaPlayer
+    announcement_pipeline:
+      speaker: vspkrSpeaker
+    media_pipeline:
+      speaker: vspkrSpeaker
+
+voice_assistant:
+  microphone: vspkrMic
+  speaker: vspkrSpeaker
+  use_wake_word: true
