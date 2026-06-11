@@ -1,11 +1,8 @@
 <center><h1>VSPKR1</h1></center>
 
-> [!NOTE]
-> I'll put an image of the speaker here when I'm done making it!<br>
-> Also, the link to the Tinkercad model will be placed here once it is finished being reviewed<br>
-> (Tinkercad reviews models before they can go public)
+<img width="470" height="666" alt="GITHUB GITHUB" src="https://github.com/user-attachments/assets/3861e2d3-e3b4-4514-81b0-db9378e7713c" />
 
-
+[Tinkercad URL (STL)](https://www.tinkercad.com/things/8K3mWJbN8PP-vinyl-speaker-1-case)
 ### What is it?
 
 The VSPKR1 (Vinyl Speaker 1) is an open source alternative to Alexa, Google Home, or a Homepod, but open source (similar to the Home Assistant Voice Preview edition, but also made for music and not only Assist!)<br><br>
