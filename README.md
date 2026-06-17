@@ -8,7 +8,10 @@
 The VSPKR1 (Vinyl Speaker 1) is an open source alternative to Alexa, Google Home, or a Homepod, but open source (similar to the Home Assistant Voice Preview edition, but also made for music and not only Assist!)<br><br>
 It can / will be able to be used with either cloud AI or local Ollama AI (or alternatives), making it maybe smarter than your existing smart speakers!
 
-### A quick overview on how to install this
+### Why did I decide to make this?
+There are 2 reasons that I decided to make this; First, I wanted to for HackClub! Second, privacy. I have heard that Google Home speakers can spy on you, and listen in to your conversations. I think that is true 100%, so that's why I made this! To De-Google!
+
+### A quick overview on how to build this;
 
 > [!NOTE]
 > I unfortunately got a hairline fracture on my arm while working on this project. <br>
