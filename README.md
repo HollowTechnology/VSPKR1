@@ -8,4 +8,27 @@
 The VSPKR1 (Vinyl Speaker 1) is an open source alternative to Alexa, Google Home, or a Homepod, but open source (similar to the Home Assistant Voice Preview edition, but also made for music and not only Assist!)<br><br>
 It can / will be able to be used with either cloud AI or local Ollama AI (or alternatives), making it maybe smarter than your existing smart speakers!
 
-You can buiild it at home by ordering the PCB from a PCB manufacturer, and soldering everything
+### A quick overview on how to install this
+
+> [!NOTE]
+> I unfortunately got a hairline fracture on my arm while working on this project. <br>
+> Sorry if this guide is bad in any way!<br>
+> Also, this guide assumes you have either a hot plate or a hot air rework station
+
+Step 1. Getting the parts<br>
+All of the parts (except the PCB) are in the BOM.csv file with Digikey Part ID's for each part and quantities.<br>
+Order those to get started!<br>
+Make sure to also get the case 3D printed from somewhere (PCBWay can make the PCB + 3D Printed case!)
+<br><br>
+Step 2. Ordering PCB<br>
+For this, open the `pcb` folder in the root of this repo as a project in KiCad. Then, you can export the gerber files from the `File` menu.<br>
+From there, you can then order that PCB from your preferred PCB manufacturer.
+<br><br>
+Step 3. Build it!<br>
+Once all the parts and PCB have arrived, you can then use a hot plate or hot air rework station, assuming you have one to solder all the parts to the PCB. For easier soldering, take a look at the PCB viewer in KiCad on a monitor while soldering.
+<br><br>
+Step 4. Flash ESPHome<br>
+Follow the guide at `esphome.io` to flash the board with ESPHome firmware
+<br><br>
+Step 5. VSPKR1 Firmware<br>
+Connect the PCB to your computer and drag and drop the file from the `firmware` folder to the PCB, when it shows up as a USB Drive. You are done! Enjoy your speaker!
