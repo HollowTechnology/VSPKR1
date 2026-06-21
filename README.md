@@ -35,3 +35,9 @@ Follow the guide at `esphome.io` to flash the board with ESPHome firmware
 <br><br>
 Step 5. VSPKR1 Firmware<br>
 Connect the PCB to your computer and drag and drop the file from the `firmware` folder to the PCB, when it shows up as a USB Drive. You are done! Enjoy your speaker!
+
+### Screnshots:
+<img width="640" height="480" alt="Screenshot 2026-06-20 214013" src="https://github.com/user-attachments/assets/bad3332f-7cc4-4b86-9b80-c2c523ed9ca8" /> 
+<img width="640" height="480" alt="Screenshot 2026-06-20 214033" src="https://github.com/user-attachments/assets/05b5da02-21af-4a02-912f-253f8bd81707" />
+<img width="640" height="480" alt="Screenshot 2026-06-20 214054" src="https://github.com/user-attachments/assets/82855563-499f-49be-92f2-64ab1564be42" />
+
