@@ -1,6 +1,6 @@
 <center><h1>VSPKR1</h1></center>
 
-<img width="470" height="666" alt="GITHUB GITHUB" src="https://github.com/user-attachments/assets/3861e2d3-e3b4-4514-81b0-db9378e7713c" />
+<img width="470" height="666" alt="Fallout Zine" src="https://github.com/user-attachments/assets/183128e9-06e5-451b-b5f9-1dbb48db2746" />
 
 [Tinkercad URL (STL)](https://www.tinkercad.com/things/8K3mWJbN8PP-vinyl-speaker-1-case)
 ### What is it?
